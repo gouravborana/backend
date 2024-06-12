@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Enquiry </title>
+	<style type="text/css">
+		
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		body {
+			background-color: black;
+		}
+
+		.main {
+			width: 1000px;
+			height: 786px;
+			margin: auto;
+		}
+
+		.r1 {
+			width: 1000px;
+			height: 200px;
+			background-image: url(images/headerbg.jpg);
+			background-position: center center;
+			background-size: cover;
+		}
+
+		.r1c1 {
+			width: 260px;
+			height: 200px;
+			text-align: center;
+			float: left;
+		}
+
+		.logo {
+			margin-top: 20px;
+		}
+
+		.r1c2 {
+			width: 400px;
+			height: 200px;
+			float: left;
+		}
+
+		.headertext {
+			font-weight: bold;
+			color: #00618a;
+			text-align: center;
+			font-size: 20px;
+			margin-top: 50px;
+		}
+
+		.r1c3 {
+			width: 330px;
+			height: 200px;
+			float: left;
+		}
+
+		.contact_info {
+			width: 300px;
+			height: 120px;
+			margin-top: 30px;
+			margin-left: 15px;
+			background-image: url(images/topcontactbg.png);
+			background-repeat: no-repeat;
+			padding-left: 15px;
+		}
+
+		.url {
+			width: 290px;
+			font-size: 22px;
+			padding: 5px;
+		}
+
+		.email {
+			width: 290px;
+			font-size: 22px;
+			font-weight: bold;
+			padding: 5px;
+		}
+
+		.phone {
+			width: 290px;
+			font-size: 22px;
+			font-weight: bold;
+			color: white;
+			padding: 5px;
+		}
+
+		.r2 {
+			width: 1000px;
+			height: 50px;
+			background-image: url(images/menubg.jpg);
+		}
+
+		.menubar {
+			width: 1000px;
+			list-style: none;
+			font-weight: bold;
+		}
+
+		.menuitem {
+			width: 127px;
+			height: 44px;
+			float: left;
+			text-align: center;
+			line-height: 44px;
+			background-image: url(images/menubackground.png);
+			margin-left: 15px;
+			margin-top: 10px;
+		}
+
+		.home {
+			margin-left: 75px;
+		}
+
+		.r3 {
+			width: 1000px;
+			height: 691px;
+		}
+
+		.r3_inner {
+			width: 980px;
+			height: 671px;
+			margin: 10px;
+		}
+
+		.c1 {
+			width: 220px;
+			height: 240px;
+			margin: 0px 5px;
+			float: left;
+		}
+
+		.mitems {
+			width: 210px;
+			height: 40px;
+			list-style: none;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.litems {
+			width: 210px;
+			height: 40px;
+			background-image: url(images/leftmenubg.png);
+			background-size: cover;
+			line-height: 40px;
+		}
+
+		.r3c2 {
+			width: 743px;
+			height: 670px;
+			background-color: white;
+			float: right;
+		}
+
+		.r3_gallery {
+			width: 713px;
+			font-size: 32px;
+			font-weight: bold;
+			margin: 15px;
+		}
+
+		.r3_content {
+			width: 743px;
+			height: 600px;
+		}
+
+		.gender {
+			margin-top: 10px;
+			margin-left: 15px;
+			color: #5b5b5b;
+		}
+
+		.form {
+			margin-top: 20px;
+			margin-left: 15px;
+			color: #5b5b5b;
+		}
+
+		#male {
+			margin-left: 48px;
+		}
+
+		#female {
+			margin-left: 7px;
+		}
+
+		#name {
+			margin-left: 58px;
+			width: 200px;
+			height: 20px;
+			border: 1px solid #5b5b5b;
+		}
+
+		#contact_num {
+			margin-left: 20px;
+			width: 200px;
+			height: 20px;
+			border: 1px solid #5b5b5b;
+		}
+
+		#country {
+			margin-left: 45px;
+		}
+
+		#state {
+			margin-left: 65px;
+		}
+
+		#city {
+			margin-left: 69px;
+		}
+
+		.address {
+			float: left;
+		}
+
+		#textarea {
+			margin-left: 46px;
+			width: 200px;
+			height: 100px;
+			border: 1px solid #5b5b5b;
+			resize: none;
+		}
+
+		#email {
+			margin-left: 56px;
+			width: 200px;
+			height: 20px;
+			border: 1px solid #5b5b5b;
+		}
+
+		.enquiry {
+			float: left;
+		}
+
+		#e_textarea {
+			margin-left: 46px;
+			width: 200px;
+			height: 100px;
+			border: 1px solid #5b5b5b;
+			resize: none;
+		}
+
+		#button {
+			margin-top: 30px;
+			margin-left: 15px;
+			border: none;
+			background: #09F;
+			padding: 10px 20px;
+			border-radius: 10px;
+			font-weight: bold;
+			color: white;
+			font-size: 14px;
+			cursor: pointer;
+		}
+
+		.r5 {
+			width: 1000px;
+			height: 48px;
+		}
+
+		.r5c1 {
+			width: 13px;
+			height: 48px;
+			float: left;
+		}
+
+		.r5c2 {
+			width: 973px;
+			height: 48px;
+			text-align: center;
+			font-weight: bold;
+			line-height: 48px;
+			background-image: url(images/footer_middle.png);
+			float: left;
+		}
+
+		.r5c3 {
+			width: 14px;
+			height: 48px;
+			float: left;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="r1">
+			<div class="r1c1">
+				<img src="images/logo.png" class="logo">
+			</div>
+			<div class="r1c2">
+				<div class="headertext"> LOOKING FOR THE BEST PLACE FOR PROGRAMMING </div>
+			</div>
+			<div class="r1c3">
+				<div class="contact_info">
+					<div class="url">
+						<a href="index.html"> www.iipacademy.com </a>
+					</div>
+					<div class="email">
+						<a href="mailto:Info@iipacademy.com"> Info@iipacademy.com </a>
+					</div>
+					<div class="phone">
+						<a href="tel:+91-9269698122"> +91-9269698122 </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="r2">
+			<ul class="menubar">
+				<li class="menuitem home"> 
+					<a href="/"> Home </a> 
+				</li>
+				<li class="menuitem"> 
+					<a href="/about_us"> About Us </a> 
+				</li>
+				<li class="menuitem"> 
+					<a href="/course"> Course </a> 
+				</li>
+				<li class="menuitem"> 
+					<a href="/gallery"> Gallery </a> 
+				</li>
+				<li class="menuitem"> 
+					<a href="/enquiry"> Enquiry </a> 
+				</li>
+				<li class="menuitem"> 
+					<a href="/contact_us"> Contact Us </a> 
+				</li>
+			</ul>
+		</div>
+		
+		<div class="r3">
+			<div class="r3_inner">
+				<div class="c1">
+					<ul class="mitems">
+						<li class="litems">
+							<a href="/"> Home </a>
+						</li>
+						<li class="litems">
+							<a href="/about_us"> About Us </a>
+						</li>
+						<li class="litems">
+							<a href="/course"> Course </a>
+						</li>
+						<li class="litems">
+							<a href="/gallery"> Gallery </a>
+						</li>
+						<li class="litems">
+							<a href="/enquiry"> Enquiry </a>
+						</li>
+						<li class="litems">
+							<a href="/contact_us"> Contact Us </a>
+						</li>
+					</ul>
+				</div>
+				<div class="r3c2">
+					<div class="r3_gallery"> Enquiry </div>
+					<div class="r3_content">
+						<div class="gender">
+							<label> Gender : </label>
+
+							<input type="radio" name="gender" id="male">
+							<label for="male"> Male </label>
+
+							<input type="radio" name="gender" id="female">
+							<label for="female"> Female </label>
+						</div>
+						<div class="form">
+							<label> Name : </label>
+							<input type="text" name="name" id="name">
+						</div>
+						<div class="form">
+							<label> Contact No. : </label>
+							<input type="number" name="contact_number" id="contact_num">
+						</div>
+						<div class="form">
+							<label> Country : </label>
+							<select name="country" id="country">
+								<option> ---select--- </option>
+								<option> India </option>
+								<option> USA </option>
+								<option> Australia </option>
+							</select>
+						</div>
+						<div class="form">
+							<label> State : </label>
+							<select name="sate" id="state">
+								<option> ---select--- </option>
+								<option> Rajasthan </option>
+								<option> Maharastra </option>
+								<option> Punjab </option>
+								<option> Kerela </option>
+								<option> New York </option>
+								<option> Malbourne </option>
+								<option> Sydney </option>
+							</select>
+						</div>
+						<div class="form">
+							<label> City : </label>
+							<select name="city" id="city">
+								<option> ---select --- </option>
+								<option> Jodhpur </option>
+								<option> Jaipur </option>
+								<option> Mumbai </option>
+								<option> Washington DC </option>
+								<option> New York </option>
+							</select>
+						</div>
+						<div class="form">
+							<label class="address"> Address : </label>
+							<textarea name="textarea" id="textarea"> </textarea>
+						</div>
+						<div class="form">
+							<label> Email : </label>
+							<input type="email" name="email" id="email">
+						</div>
+						<div class="form">
+							<label class="enquiry"> Enquiry : </label>
+							<textarea name="textarea" id="e_textarea"> </textarea>
+						</div>
+						<div class="button">
+							<input type="submit" value="Send" id="button">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="r5">
+			<div class="r5c1">
+				<img src="images/footer_left.png">
+			</div>
+			<div class="r5c2">
+				<a href="/"> Home </a> |
+				<a href="/about_us"> About Us </a> |
+				<a href="/course"> Course </a> |
+				<a href="/gallery"> Gallery </a> |
+				<a href="/enquiry"> Enquiry </a> |
+				<a href="/contact_us"> Contact Us </a>
+			</div>
+			<div class="r5c3">
+				<img src="images/footer_right.png">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
